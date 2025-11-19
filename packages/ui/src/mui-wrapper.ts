@@ -5,7 +5,6 @@
 export {
   Button as MuiButton,
   IconButton as MuiIconButton,
-  CircularProgress,
   Typography as MuiTypography,
   TextField as MuiTextField,
   Card as MuiCard,
@@ -15,6 +14,7 @@ export {
   Divider as MuiDivider,
   Chip as MuiChip,
   Avatar as MuiAvatar,
+  AvatarGroup as MuiAvatarGroup,
   Badge as MuiBadge,
   Menu as MuiMenu,
   MenuItem as MuiMenuItem,
@@ -65,7 +65,10 @@ export {
   Select as MuiSelect,
   // Progress & Loading
   LinearProgress as MuiLinearProgress,
+  CircularProgress,
   Skeleton as MuiSkeleton,
+  // Slider
+  Slider as MuiSlider,
   // Surfaces
   AppBar as MuiAppBar,
   Toolbar as MuiToolbar,
@@ -87,11 +90,9 @@ export {
   Icon as MuiIcon,
   SvgIcon as MuiSvgIcon,
   // Theme und Styling
-  Theme,
-  ThemeProvider,
   createTheme,
+  ThemeProvider,
   styled,
-  useTheme,
   makeStyles,
   withStyles,
   // CSS Baseline - für Box-Sizing Reset
@@ -99,7 +100,7 @@ export {
   // Utils und CSS Utilities
   darken,
   lighten,
-  fade,
+  // fade, // DEPRECATED: Use alpha instead
   alpha,
   emphasize,
   useMediaQuery,
@@ -107,35 +108,109 @@ export {
   createStyles,
 } from '@mui/material'
 
+// Next.js App Router Integration
+export {
+  AppRouterCacheProvider
+} from '@mui/material-nextjs/v15-appRouter'
+
 export type {
+  // Button Components
   ButtonProps as MuiButtonProps,
   IconButtonProps as MuiIconButtonProps,
+  // Typography Components
   TypographyProps as MuiTypographyProps,
+  // Form Components
   TextFieldProps as MuiTextFieldProps,
+  // Card Components
   CardProps as MuiCardProps,
   CardHeaderProps as MuiCardHeaderProps,
   CardContentProps as MuiCardContentProps,
+  CardActionsProps as MuiCardActionsProps,
+  // Layout Components
+  DividerProps as MuiDividerProps,
   ChipProps as MuiChipProps,
   AvatarProps as MuiAvatarProps,
+  AvatarGroupProps as MuiAvatarGroupProps,
   BadgeProps as MuiBadgeProps,
+  // Menu Components
   MenuProps as MuiMenuProps,
   MenuItemProps as MuiMenuItemProps,
+  // List Components
   ListProps as MuiListProps,
   ListItemProps as MuiListItemProps,
   ListItemButtonProps as MuiListItemButtonProps,
   ListItemTextProps as MuiListItemTextProps,
-  AlertProps as MuiAlertProps,
-  DialogProps as MuiDialogProps,
+  ListItemIconProps as MuiListItemIconProps,
+  // Navigation Components
   TabsProps as MuiTabsProps,
   TabProps as MuiTabProps,
-  BoxProps,
-  ContainerProps,
-  GridProps,
-  SelectProps as MuiSelectProps,
+  BreadcrumbsProps as MuiBreadcrumbsProps,
+  LinkProps as MuiLinkProps,
+  // Feedback Components
+  AlertProps as MuiAlertProps,
+  DialogProps as MuiDialogProps,
+  DialogTitleProps as MuiDialogTitleProps,
+  DialogContentProps as MuiDialogContentProps,
+  DialogActionsProps as MuiDialogActionsProps,
+  SnackbarProps as MuiSnackbarProps,
+  // Data Display Components
+  TableProps as MuiTableProps,
+  TableBodyProps as MuiTableBodyProps,
+  TableCellProps as MuiTableCellProps,
+  TableContainerProps as MuiTableContainerProps,
+  TableHeadProps as MuiTableHeadProps,
+  TableRowProps as MuiTableRowProps,
+  TablePaginationProps as MuiTablePaginationProps,
+  // Form Components
   FormControlProps as MuiFormControlProps,
+  FormLabelProps as MuiFormLabelProps,
+  FormHelperTextProps as MuiFormHelperTextProps,
+  InputLabelProps as MuiInputLabelProps,
+  OutlinedInputProps as MuiOutlinedInputProps,
+  FilledInputProps as MuiFilledInputProps,
+  InputAdornmentProps as MuiInputAdornmentProps,
   SwitchProps as MuiSwitchProps,
   CheckboxProps as MuiCheckboxProps,
   RadioProps as MuiRadioProps,
-  DialogTitleProps as MuiDialogTitleProps,
+  RadioGroupProps as MuiRadioGroupProps,
+  FormControlLabelProps as MuiFormControlLabelProps,
+  SelectProps as MuiSelectProps,
+  // Slider Component
+  SliderProps as MuiSliderProps,
+  // Progress Components
+  LinearProgressProps as MuiLinearProgressProps,
+  CircularProgressProps as MuiCircularProgressProps,
+  SkeletonProps as MuiSkeletonProps,
+  // Surfaces Components
+  AppBarProps as MuiAppBarProps,
+  ToolbarProps as MuiToolbarProps,
+  DrawerProps as MuiDrawerProps,
   AccordionProps as MuiAccordionProps,
+  AccordionSummaryProps as MuiAccordionSummaryProps,
+  AccordionDetailsProps as MuiAccordionDetailsProps,
+  // Utitlity Components
+  BoxProps,
+  ContainerProps,
+  GridProps,
+  StackProps,
+  PaperProps,
+  TooltipProps as MuiTooltipProps,
+  PopoverProps as MuiPopoverProps,
+  ModalProps as MuiModalProps,
+  BackdropProps as MuiBackdropProps,
+  // Transitions
+  FadeProps as MuiFadeProps,
+  GrowProps as MuiGrowProps,
+  SlideProps as MuiSlideProps,
+  ZoomProps as MuiZoomProps,
+  CollapseProps as MuiCollapseProps,
+  // Icon Components
+  IconProps as MuiIconProps,
+  SvgIconProps as MuiSvgIconProps,
+  // Theme and Typography
+  ThemeOptions,
+  StyledComponentProps,
 } from '@mui/material'
+
+// Hoisted imports to prevent conflicts
+export { Divider as HrProps } from '@mui/material'
