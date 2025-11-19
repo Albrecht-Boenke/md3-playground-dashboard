@@ -1,0 +1,67 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing
+coverage/
+.nyc_output
+
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Production
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Misc
+.DS_Store
+*.pem
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Turbo
+.turbo/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# TypeScript
+*.tsbuildinfo
+
+# AI-related files and documentation
+xAI_PLAYGROUND/
+**/xAI_PLAYGROUND/
+*.prompt.md
+*.prompt.txt
+*_PROMPT.md
+*_PROMPT.txt
+*_ANLEITUNG.md
+*_ANLEITUNG.txt
+*_SETUP.md
+*_SETUP.txt
+ai-*.md
+prompt-*.md
+claude-*.md
+bolt-*.md
+kimi-*.md
+
