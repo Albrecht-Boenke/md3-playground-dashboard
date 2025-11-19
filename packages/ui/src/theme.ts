@@ -1,6 +1,13 @@
 import { createTheme } from '@mui/material/styles';
 
+/**
+ * Material Design 3 Theme für MD3 Playground Dashboard
+ * 
+ * Verwendet cssVariables: true um React-Serialisierungsfehler zu vermeiden
+ * und folgt dem Pattern aus dem Hauptprojekt (Blütenrepublik WebApp)
+ */
 export const theme = createTheme({
+  cssVariables: true, // WICHTIG: Verhindert Serialisierungsfehler in Next.js App Router
   palette: {
     mode: 'light',
     primary: {

@@ -1,0 +1,10 @@
+node_modules/
+.next/
+dist/
+build/
+.turbo/
+*.config.js
+*.config.ts
+pnpm-lock.yaml
+**/next-env.d.ts
+**/.next/**
