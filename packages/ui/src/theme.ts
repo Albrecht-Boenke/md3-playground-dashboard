@@ -1,4 +1,4 @@
-import { createTheme } from '@mui/material/styles';
+import { createTheme } from './mui-wrapper';
 
 /**
  * Material Design 3 Theme für MD3 Playground Dashboard

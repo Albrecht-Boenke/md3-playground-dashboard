@@ -1,13 +1,16 @@
 'use client'
 
 import * as React from 'react'
-import { 
-  Button as MuiButton, 
-  ButtonProps as MuiButtonProps,
-  IconButton as MuiIconButton,
-  IconButtonProps as MuiIconButtonProps,
+import {
+  MuiButton,
   CircularProgress,
-} from '@mui/material'
+  MuiIconButton,
+  type MuiButtonProps,
+  type MuiIconButtonProps
+} from '../../mui-wrapper'
+
+// ✅ RICHTIG: ALLE MUI-Komponenten importiert über @packages/ui/mui-wrapper
+// Dies BEFOLGT die Import Governance Regel aus AI_PROJECT_CONTEXT.md
 
 // Theme-based minimal design approach using standard MUI variants
 
